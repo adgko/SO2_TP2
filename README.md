@@ -3,6 +3,10 @@ Trabajo práctico realizaba para entender los conceptos de paralelismo en lengua
 
 Emplea librería OpenMP y procesamiento de imagen BMP
 
+## Compilación
+
+Todo lo necesario es el programa programa_paralelo_01.c, simple_bmp.c y simple_bmp.h.Al hacer make compile se consigue el bin y con make docs se obtiene la documentación de Doxygen.
+
 ## Ejecución
 
 ./parallel Radio Contraste Brillo
