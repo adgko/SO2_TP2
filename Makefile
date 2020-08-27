@@ -11,7 +11,6 @@ clean:
 	rm -r Doxyfile parallel html/ latex/ 
 
 doc:
-	doxygen -g Doxyfile
 	doxygen Doxyfile
 
 
