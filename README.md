@@ -9,6 +9,8 @@ Todo lo necesario es el programa programa_paralelo_01.c, simple_bmp.c y simple_b
 
 ## Ejecución
 
-./parallel Radio Contraste Brillo
+./serial Radio Contraste Brillo
+
+./parallel Radio Contraste Brillo CantidadHilos
   
   A la imagen procesada, se la separa en dos areas, un area delimitada por el radio en la que se aumenta su brillo, y un area fuera del círculo en la que se le aplica un filtro blur, logrado mediante una convolución
