@@ -1,0 +1,3 @@
+valgrind --tool=cachegrind --log-file=valgrind-out.txt ./bin/parallel 2000 2 10 4
+
+

@@ -2,7 +2,7 @@
  Created by jmorales on 4/22/20.
 */
 
-#include "simple_bmp.h"
+#include "../include/simple_bmp.h"
 
 enum sbmp_codes sbmp_initialize_bmp (sbmp_image *image, uint32_t height, uint32_t width)
 {
