@@ -1,16 +1,20 @@
 CC = gcc
-EFLAGS = -Wall -pedantic -Wconversion -Werror			## error flags
-OFLAGS = -g -lm -fopenmp -march=native				## other flags
+EFLAGS = -Wall -pedantic -Wconversion -Werror			## flags de error
+OFLAGS = -g -lm -fopenmp -march=native				## otras flags de error
 
+all: check compile 
 
-compile: programa_paralelo_01.c
-	cppcheck ./
-	gcc $(EFLAGS) $(OFLAGS) programa_paralelo_01.c simple_bmp.c -o parallel
+compile: 
+	mkdir -p ./bin
+	gcc $(EFLAGS) $(OFLAGS) src/parallel.c src/simple_bmp.c -o bin/parallel
+	gcc $(EFLAGS) $(OFLAGS) src/serial.c src/simple_bmp.c -o bin/serial
 
 clean:
 	rm -r Doxyfile parallel html/ latex/ 
 
-doc:
+docs:
 	doxygen Doxyfile
-
+	
+check:
+	cppcheck ./
 
